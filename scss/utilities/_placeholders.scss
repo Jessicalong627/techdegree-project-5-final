@@ -1,0 +1,68 @@
+
+Links
+Headlines
+Nav items
+
+%centered{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%image {
+  display: block;
+  max-width: 100%;
+}
+
+%centered{
+  text-align: center;
+}
+
+%srt {
+  visibility: hidden;
+ }
+
+ %headline-primary {
+ font-size: 30px;
+ font-weight: $font-wt-bolder;
+ line-height: (30px, 30px);
+}
+
+
+%headline-secondary {
+ font-size: (18px);
+ font-weight: $font-weight--thin;
+ line-height: (24px, 16px);
+
+}
+
+%nav-menu-links {
+  display: block;
+  font-weight: $font-wt-bold;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+}
+
+%btn {
+	width: 100%;
+	padding: 10px 0;
+	font-weight: $font-wt-bold;
+	border-radius: 5px;
+	color: $white;
+	text-transform: uppercase;
+	@include flex(flex, column) {
+		align-items: center;
+
+	}
