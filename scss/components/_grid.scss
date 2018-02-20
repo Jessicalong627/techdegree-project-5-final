@@ -21,7 +21,6 @@
 		.grid__col--#{$i} { width: percentage($target, $context); }
 	}
 }
-
 // Flex
 .grid {
 	@include mq(medium) {
@@ -37,7 +36,6 @@
 
 
 	&__col { @include grid-background-color; }
-
 }
 
 
@@ -45,7 +43,7 @@
 	@include mq(medium) {
 		@include m(12) {
 			.theme__colors { margin: 1.875em 1em;  }
-			@include flex(flex); 
+			@include flex(flex);
 		}
 	}
 }
