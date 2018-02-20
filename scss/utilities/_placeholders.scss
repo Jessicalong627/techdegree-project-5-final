@@ -1,15 +1,10 @@
 
-Links
-Headlines
-Nav items
-
 %centered{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-// Clearfix
 %clearfix {
   &:after {
     content: "";
@@ -40,7 +35,7 @@ Nav items
 
 %headline-secondary {
  font-size: (18px);
- font-weight: $font-weight--thin;
+ font-weight: $font-wt-thin;
  line-height: (24px, 16px);
 
 }
@@ -57,12 +52,30 @@ Nav items
 
 %btn {
 	width: 100%;
-	padding: 10px 0;
+	padding: 0.75em 0;
+	font-family: $stack-lato;
 	font-weight: $font-wt-bold;
+	border: none;
 	border-radius: 5px;
 	color: $white;
 	text-transform: uppercase;
 	@include flex(flex, column) {
 		align-items: center;
-
+		margin-bottom: px(20px);
 	}
+}
+
+%text-dec-none { text-decoration: none; }
+
+%margin-auto { margin: 0 auto; }
+
+%card-padding { padding: 0.9375em; }
+
+%grid-styles {
+	padding: 0.95em 0 0.95em px(15px);
+	font-family: $stack-lato;
+	border: none;
+	border-radius: px(5px);
+	color: $grey;
+	font-weight: $font-wt-bold;
+}

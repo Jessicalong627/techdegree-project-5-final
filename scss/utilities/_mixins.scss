@@ -1,35 +1,37 @@
-//Media Query Mixin
-@mixin mq($break) {
-	@if $break == "small" {
-		@media (min-width: $break-s) and (max-width: $break-m) { @content; }
-	}
-	@else if $break == "medium" {
-		@media (min-width: $break-m) { @content; }
-	}
-	@else if $break == "large" {
-		@media (min-width: $break-l) { @content; }
-	}
-}
-
 @mixin e($element) {
-  &__#{$element} {
-    @content;
-  }
+	&__#{$element} { @content; }
 }
 
-
-@mixin m($element) {
-  &--#{$element} {
-    @content;
-  }
+@mixin m($modifier) {
+	&--#{$modifier} { @content; }
 }
 
-//Flex
-
-@mixin flexbox ($display: flex, $dir: null, $wrap: null, $just: null) {
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null) {
 	display: $display;
 	flex-direction: $dir;
 	flex-wrap: $wrap;
 	justify-content: $just;
 	@content;
+}
+
+//Grid Mixin
+@mixin grid-background-color {
+	@each $color in $grid-colors {
+		$index: index($grid-colors, $color);
+
+		&--#{$index}.theme__colors { background-color: $color; }
+	}
+}
+
+//MQ Mixin
+@mixin mq($break) {
+	@if $break == "small" {
+		@media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) { @content; }
+	}
+	@else if $break == "medium" {
+		@media (min-width: $brkpoint-md) { @content; }
+	}
+	@else if $break == "large" {
+		@media (min-width: $brkpoint-lg) { @content; }
+	}
 }

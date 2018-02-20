@@ -1,5 +1,3 @@
-
-// Fonts
 $font-url   : "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
 $stack-lato : "Lato", sans-serif;
 
@@ -11,91 +9,67 @@ $font-wt-bolder  : 900;
 
 $base-font-size : 16px;
 
+$brkpoint-sm : 1px;
+$brkpoint-md : 768px;
+$brkpoint-lg : 1100px;
 
-// Descriptive Base Colors
+$path-img : "../images";
 
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;
 
-$white    : #fff;
-$black    : #0b0b0b;
-$grey     : #797e83;
+$white      :#FFF;
+$grey       :#808080;
+$black      :#181616;
 
-$apricot    :#E59061;
 $emerald    :#50C878;
 $java       :#28DCB8;
-$flamingo   :#F4621A;
-$roman      :#DA5652;
-$studio     :#8451A9;
-$magic-ment :#8FF0CB;
+$spray      :#3DDBDB;
 $matisse    :#146FA3;
 $malibu     :#56DEF5;
 $perfume    :#D3A2F6;
 $apple      :#51BA4F;
 $sunglo     :#DF6F6D;
-
-
-
-// Grid
+$apricot    :#E59061;
+$flamingo   :#F4621A;
+$roman      :#DA5652;
+$studio     :#8451A9;
+$magic-ment :#8FF0CB;
 
 $grid-colors: (
-$apricot    :#E59061;
-$emerald    :#50C878;
-$java       :#28DCB8;
-$flamingo   :#F4621A;
-$roman      :#DA5652;
-$studio     :#8451A9;
-$magic-ment :#8FF0CB;
-$matisse    :#146FA3;
-$malibu     :#56DEF5;
-$perfume    :#D3A2F6;
-$apple      :#51BA4F;
-$sunglo     :#DF6F6D;
+	$emerald,
+	$java,
+	$perfume,
+	$malibu,
+	$apple,
+	$matisse,
+	$sunglo,
+	$apricot,
+	$flamingo,
+	$roman,
+	$studio,
+	$magic-ment
 );
 
+$primary-color   : $java;
+$secondary-color : $malibu;
 
-//Button colors
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 50%),
+		x-light  : lighten($grey, 35%),
+		base     : $grey,
+		x-dark   : darken($grey, 35%),
+		xx-dark  : darken($grey, 50%),
+	)
+);
 
-$btn-colors: (
+$ui-colors: (
 	success : $emerald,
 	error   : $roman,
 	warning : $flamingo,
 	info    : $studio,
-	default : $malibu,
+	default : $spray,
 );
-
-
-// Color Usage
-
-$color-primary   : $java;
-$color-secondary : $scooter;
-
-
-
-// Palette
-
-$color-palettes: (
-	grey: (
-		x-light  : lighten($grey, 35%),
-	  light    : lighten($grey, 12%),
-	  base     : $grey,
-	 	x-dark   : darken($grey, 16%)
-	),
-
-// Text
-
-$base__font-size : 16px;
-$base__line      : 24px;
-
-//Grid
-$grid-column-width          : 65px;
-$grid-gutter-width          : 20px;
-$grid-column-count          : 12;
-$max-width--grid-container  : 1000px;
-
-// Media Queries
-
-$break-s : 1px;
-$break-m : 768px;
-$break-l : 1100px;
-
-// Path to Assets
-$path--relative       : "../img";
